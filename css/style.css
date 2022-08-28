@@ -24,7 +24,7 @@ body {
   min-height: 100vh;
 
   background-color: #000000;
-  background-image: url("../img/Фон.jpg");
+  background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -117,7 +117,7 @@ a {
   min-width: 940px;
   min-height: 419px;
   background: url(../icon/shape.svg) center no-repeat,
-    url(../img/Подложка.jpg) #f9f6f3;
+    url(../img/substrate.jpg) #f9f6f3;
   padding-top: 47px;
   margin-bottom: 36px;
 }
