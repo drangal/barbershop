@@ -80,13 +80,13 @@ a {
   text-align: center;
 }
 
-.sailing-points {
+.selling-points {
   display: flex;
   justify-content: space-between;
   margin-bottom: 70px;
 }
 
-.sailing-points__item {
+.selling-points__item {
   display: block;
   text-align: center;
 }
@@ -171,8 +171,25 @@ time {
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
-  min-width: 302px;
-  min-height: 340px;
+  width: 302px;
+  height: 340px;
+}
+
+.info__forms {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+input {
+  font-size: inherit;
+  font-family: inherit;
+  padding-left: 17.11px;
+  background-color: #f9f6f3;
+  color: rgba(0, 0, 0, 0.5);
+  width: 140.93px;
+  height: 43px;
+  border: 2px solid #000101;
 }
 
 .button_send {
