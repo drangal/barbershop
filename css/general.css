@@ -1,0 +1,123 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header-wrapper {
+  background-color: black;
+  margin: 0;
+  width: 100%;
+  min-height: 72px;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 16px;
+  max-width: 940px;
+  margin: 0px auto;
+}
+
+.navbar__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 26px;
+  list-style-type: none;
+}
+
+.main {
+  display: flex;
+  flex: 1 1 auto;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.main__container {
+  max-width: 940px;
+  margin: 0px auto;
+}
+
+.login {
+  margin-right: 12px;
+}
+
+.links {
+  color: white;
+  text-decoration: none;
+}
+
+.links__navbar {
+  padding-right: 40px;
+}
+
+.button {
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_standart {
+  min-width: 140px;
+  min-height: 43px;
+}
+
+.footer {
+  background: url(../img/footer.jpg), #1a1a1a;
+  line-height: 24px;
+  width: 100%;
+  min-height: 193px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 940px;
+  padding-top: 59px;
+  margin: 0px auto;
+}
+
+.links__footer {
+  text-decoration: underline;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.icon {
+  display: flex;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.button_icon {
+  width: 43px;
+  height: 43px;
+}

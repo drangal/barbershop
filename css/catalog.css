@@ -1,0 +1,6 @@
+@import url("general.css");
+
+.wrapper_background {
+  background-color: #f9f6f3;
+  background-image: url("../img/main_background.jpg");
+}
