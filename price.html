@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/catalog.css" />
+    <link rel="stylesheet" href="./css/price.css" />
     <title>Barbershop Магазин</title>
   </head>
   <body>
@@ -32,12 +32,12 @@
               <a class="links links__navbar" href="#">НОВОСТИ</a>
             </li>
             <li class="navbar__item">
-              <a class="links links__navbar" href="/price.html">ПРАЙС-ЛИСТ</a>
+              <a class="links links__navbar links_current" href="#"
+                >ПРАЙС-ЛИСТ</a
+              >
             </li>
             <li class="navbar__item">
-              <a class="links links__navbar links_current" href="catalog.html"
-                >МАГАЗИН</a
-              >
+              <a class="links links__navbar" href="catalog.html">МАГАЗИН</a>
             </li>
             <li class="navbar__item">
               <a class="links links__navbar" href="#">КОНТАКТЫ</a>
@@ -78,155 +78,63 @@
       <main class="main">
         <div class="main__container">
           <div class="main__topic">
-            <b class="name">СРЕДСТВА ДЛЯ УХОДА</b>
+            <b class="name">ПРАЙС-ЛИСТ</b>
             <ul class="bread-crumbs">
               <li class="bread-crumbs__item">ГЛАВНАЯ</li>
-              <li class="bread-crumbs__item">МАГАЗИН</li>
-              <li class="bread-crumbs__item">СРЕДСТВА ДЛЯ УХОДА</li>
+              <li class="bread-crumbs__item">ПРАЙС-ЛИСТ</li>
             </ul>
           </div>
+          <img src="/icon/slogan.svg" alt="Лозунг 'ИСТИННО МУЖСКАЯ КЛАССИКА'" />
           <div class="main__catalog">
-            <aside class="side-panel">
-              <div class="side-panel__item">
-                <b class="name_middle">ПРОИЗВОДИТЕЛИ</b>
-                <label class="container"
-                  >Baxter of California
-                  <input type="checkbox" checked="checked" />
-                  <span class="checkmark"></span>
-                </label>
-                <label class="container"
-                  >Mr Natty
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label class="container"
-                  >Suavecito
-                  <input type="checkbox" checked="checked" />
-                  <span class="checkmark"></span>
-                </label>
-                <label class="container"
-                  >Malin+Goetz
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label class="container"
-                  >Murray’s
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label class="container"
-                  >American Crew
-                  <input type="checkbox" checked="checked" />
-                  <span class="checkmark"></span>
-                </label>
-              </div>
-
-              <div class="side-panel__item">
-                <b class="name_middle">ГРУППЫ ТОВАРОВ:</b>
-                <label class="container"
-                  >Бритвенные принадлежности
-                  <input type="radio" checked="checked" name="radio" />
-                  <span class="radiobtn"></span>
-                </label>
-                <label class="container"
-                  >Средства для ухода
-                  <input type="radio" name="radio" />
-                  <span class="radiobtn"></span>
-                </label>
-                <label class="container"
-                  >Аксессуары
-                  <input type="radio" name="radio" />
-                  <span class="radiobtn"></span>
-                </label>
-              </div>
-              <a href="#" class="button button_show">ПОКАЗАТЬ</a>
-            </aside>
-            <div class="main__items">
-              <div class="item">
-                <img class="item__image" src="/img/travel_kit.jpg" />
-                <p class="product-name">
-                  Набор для путешествий <br />
-                  «Baxter of California»
+            <div class="">
+              <b class="name_middle"
+                >МЫ ИСПОЛЬЗУЕМ ТОЛЬКО<br />
+                ЛУЧШИЕ СРЕДСТВА:</b
+              >
+              <ul class="care-products">
+                <li class="care-products__item">Baxter of California</li>
+                <li class="care-products__item">Mr Natty</li>
+                <li class="care-products__item">Suavecito</li>
+                <li class="care-products__item">Malin+Goetz</li>
+              </ul>
+            </div>
+            <div class="">
+              <b class="name_middle"
+                >ЦЕНЫ НА УСЛУГИ<br />
+                НАШИХ МАСТЕРОВ:</b
+              >
+              <table>
+                <tr>
+                  <td>СТРИЖКА</td>
+                  <td>1500 ₽</td>
+                </tr>
+                <tr>
+                  <td>СТРИЖКА БОРОДЫ</td>
+                  <td>500 ₽</td>
+                </tr>
+                <tr>
+                  <td>НАКРУТКА УСОВ</td>
+                  <td>350 ₽</td>
+                </tr>
+              </table>
+            </div>
+            <div class="">
+              <b class="name_middle">НЕСКОЛЬКО СЛОВ О НАС:</b>
+              <div>
+                <p>
+                  Наша парикмахерская занимается исключительно мужскими
+                  стрижками. Стрижка каждого клиента для нас - это уникальная и
+                  продуманная до мелочей работа. Мы не работаем на количество,
+                  мы делаем качество.
                 </p>
-                <div class="purchase">
-                  <div class="price">2 900 ₽</div>
-                  <div>
-                    <a href="/product.html" class="button button_buy">КУПИТЬ</a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <img class="item__image" src="/img/conditioner.jpg" />
-                <p class="product-name">
-                  Увлажняющий кондиционер <br />
-                  «Baxter of California»
+                <p>
+                  Наша мастерская расположена в центре города, поэтому сделать
+                  стильную стрижку можно в любое время, даже в обеденный
+                  перерыв. Здесь вы можете погрузиться в удобную для вас
+                  атмосферу, чувствовать себя комфортно и свободно!
                 </p>
-                <div class="purchase">
-                  <div class="price">750 ₽</div>
-                  <div>
-                    <a href="#" class="button button_buy">КУПИТЬ</a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <img class="item__image" src="/img/hair_gel_suavecito.jpg" />
-                <p class="product-name">
-                  Гель для волос <br />
-                  «SUAVECITO»
-                </p>
-                <div class="purchase">
-                  <div class="price">290 ₽</div>
-                  <div>
-                    <a href="#" class="button button_buy">КУПИТЬ</a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <img class="item__image" src="/img/hair_clay.jpg" />
-                <p class="product-name">
-                  Глина для укладки волос <br />
-                  «American crew»
-                </p>
-                <div class="purchase">
-                  <div class="price">500 ₽</div>
-                  <div>
-                    <a href="#" class="button button_buy">КУПИТЬ</a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <img class="item__image" src="/img/hair_gel_american.jpg" />
-                <p class="product-name">
-                  Гель для волос <br />
-                  «AMERICAN CREW»
-                </p>
-                <div class="purchase">
-                  <div class="price">300 ₽</div>
-                  <div>
-                    <a href="#" class="button button_buy">КУПИТЬ</a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <img class="item__image" src="/img/shaving_kit.jpg" />
-                <p class="product-name">
-                  Набор для бритья <br />
-                  «Baxter of California»
-                </p>
-                <div class="purchase">
-                  <div class="price">3 900 ₽</div>
-                  <div>
-                    <a href="#" class="button button_buy">КУПИТЬ</a>
-                  </div>
-                </div>
               </div>
             </div>
-          </div>
-          <div class="main__pages">
-            <a href="#" class="button button_icon">1</a>
-            <a href="#" class="button button_current">2</a>
-            <a href="#" class="button button_icon">3</a>
-            <a href="#" class="button button_icon">4</a>
           </div>
         </div>
       </main>

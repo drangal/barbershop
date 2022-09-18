@@ -1,0 +1,11 @@
+@import url("general.css");
+
+.main__container {
+  display: flex;
+  max-width: 940px;
+  margin: 0px auto;
+  color: black;
+  flex-direction: column;
+  margin-top: 51px;
+  margin-bottom: 49px;
+}
