@@ -14,36 +14,6 @@
   margin-bottom: 49px;
 }
 
-.bread-crumbs {
-  display: flex;
-  flex-direction: row;
-  list-style-image: url("/icon/rhomb.svg");
-  margin-top: 15px;
-}
-
-.bread-crumbs__item {
-  padding-left: 20px;
-  padding-right: 40px;
-}
-
-.bread-crumbs .bread-crumbs__item:first-child {
-  padding-left: 0;
-  list-style-image: none;
-  list-style-type: none;
-}
-
-.bread-crumbs li:last-child {
-  padding-right: 0;
-  color: #aba9a7;
-}
-
-.main__catalog {
-  display: flex;
-  flex-direction: row;
-  margin-top: 49px;
-  margin-bottom: 63px;
-}
-
 .side-panel {
   display: flex;
   flex-direction: column;
@@ -51,13 +21,6 @@
   flex-grow: 1;
   max-width: 168px;
   padding-bottom: 18px;
-}
-
-.name_middle {
-  display: block;
-  font-size: 24px;
-  line-height: 30px;
-  margin-bottom: 27px;
 }
 
 /* Customize the label (the container) */
@@ -172,6 +135,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .item__image {
@@ -181,27 +145,6 @@
 .product-name {
   padding-left: 16px;
   padding-right: 16px;
-}
-
-.purchase {
-  display: flex;
-  flex-direction: row;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.price {
-  flex-grow: 1;
-  color: black;
-  background-color: #e5e5e5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.button_buy {
-  min-width: 78px;
-  min-height: 43px;
 }
 
 .main__pages {
