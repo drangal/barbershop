@@ -7,6 +7,11 @@
   background-size: contain;
 }
 
+.main__container {
+  max-width: 940px;
+  margin: 0px auto;
+}
+
 .logo-index {
   margin: 60px auto;
   text-align: center;
@@ -21,11 +26,6 @@
 .selling-points__item {
   display: block;
   text-align: center;
-}
-
-.name {
-  font-size: 30px;
-  line-height: 42px;
 }
 
 .square {
@@ -46,7 +46,7 @@
   align-items: flex-start;
   color: #000;
   text-align: left;
-  min-width: 940px;
+  min-width: 890px;
   min-height: 419px;
   background: url(../icon/shape.svg) center no-repeat,
     url(../img/substrate.jpg) #f9f6f3;
@@ -113,6 +113,11 @@ input {
   width: 140.93px;
   height: 43px;
   border: 2px solid #000101;
+}
+
+input:focus {
+  outline: none !important;
+  border-color: #663d15;
 }
 
 .button_send {

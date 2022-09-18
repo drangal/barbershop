@@ -1,6 +1,212 @@
 @import url("general.css");
 
 .wrapper_background {
-  background-color: #f9f6f3;
-  background-image: url("../img/main_background.jpg");
+  background: url(../img/substrate.jpg) #f9f6f3;
+}
+
+.main__container {
+  display: flex;
+  max-width: 940px;
+  margin: 0px auto;
+  color: black;
+  flex-direction: column;
+  margin-top: 51px;
+  margin-bottom: 49px;
+}
+
+.bread-crumbs {
+  display: flex;
+  flex-direction: row;
+  list-style-image: url("/icon/rhomb.svg");
+  margin-top: 15px;
+}
+
+.bread-crumbs__item {
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.bread-crumbs .bread-crumbs__item:first-child {
+  padding-left: 0;
+  list-style-image: none;
+  list-style-type: none;
+}
+
+.bread-crumbs li:last-child {
+  padding-right: 0;
+  color: #aba9a7;
+}
+
+.main__catalog {
+  display: flex;
+  flex-direction: row;
+  margin-top: 49px;
+  margin-bottom: 63px;
+}
+
+.side-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  max-width: 168px;
+  padding-bottom: 18px;
+}
+
+.name_middle {
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 27px;
+}
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 17px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* On mouse-over, add a brown text color */
+.container:hover {
+  color: #663d15;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-image: url("/icon/uncheckbox.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-image: url("/icon/checkbox.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Create a custom radio button */
+.radiobtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-image: url("/icon/unradio.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .radiobtn {
+  background-image: url("/icon/radio.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radiobtn:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .radiobtn:after {
+  display: block;
+}
+
+.button_show {
+  min-width: 112px;
+  min-height: 43px;
+}
+
+.main__items {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-left: 72px;
+}
+
+.item {
+  min-width: 220px;
+  min-height: 286px;
+  background-color: white;
+  font-size: 14px;
+  line-height: 18px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item__image {
+  background-size: 100%;
+}
+
+.product-name {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.purchase {
+  display: flex;
+  flex-direction: row;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.price {
+  flex-grow: 1;
+  color: black;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_buy {
+  min-width: 78px;
+  min-height: 43px;
+}
+
+.main__pages {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  margin-left: 240px;
 }
