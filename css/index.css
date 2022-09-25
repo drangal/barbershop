@@ -1,73 +1,10 @@
-/*the first two selectors are needed to align the child blocks in the parents*/
-html {
-  box-sizing: border-box;
-}
+@import url("general.css");
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "PT Sans Narrow", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: white;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-
+.wrapper_background {
   background-color: #000000;
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-.header-wrapper {
-  background-color: black;
-  margin: 0;
-  width: auto;
-  height: 72px;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  font-size: 16px;
-  max-width: 940px;
-  margin: 0px auto;
-}
-
-ul {
-  margin-top: 26px;
-  list-style-type: none;
-}
-
-.navbar__links {
-  padding-right: 40px;
-  display: inline;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-.login {
-  margin-right: 12px;
-}
-
-.main {
-  display: flex;
-  flex: 1;
-  font-size: 14px;
-  line-height: 24px;
 }
 
 .main__container {
@@ -91,11 +28,6 @@ a {
   text-align: center;
 }
 
-.name {
-  font-size: 30px;
-  line-height: 42px;
-}
-
 .square {
   width: 20px;
   height: 20px;
@@ -114,7 +46,7 @@ a {
   align-items: flex-start;
   color: #000;
   text-align: left;
-  min-width: 940px;
+  min-width: 890px;
   min-height: 419px;
   background: url(../icon/shape.svg) center no-repeat,
     url(../img/substrate.jpg) #f9f6f3;
@@ -129,15 +61,6 @@ a {
   align-items: flex-start;
   min-width: 342px;
   min-height: 324px;
-}
-
-.button {
-  min-width: 140px;
-  min-height: 43px;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .info__gallery {
@@ -192,42 +115,12 @@ input {
   border: 2px solid #000101;
 }
 
+input:focus {
+  outline: none !important;
+  border-color: #663d15;
+}
+
 .button_send {
-  min-width: 100%;
-}
-
-.footer {
-  background: url(../img/footer.jpg), #1a1a1a;
-  line-height: 24px;
-  width: 100%;
-  height: 193px;
-  margin-top: 29px;
-}
-
-.footer__container {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  max-width: 940px;
-  padding-top: 59px;
-  margin: 0px auto;
-}
-
-.footer_link {
-  text-decoration: underline;
-}
-
-.center-text {
-  text-align: center;
-}
-
-.icon {
-  display: flex;
-  flex-flow: row nowrap;
-  gap: 6px;
-  margin-top: 12px;
-}
-
-.button_icon {
-  min-width: 43px;
+  width: 302px;
+  height: 43px;
 }

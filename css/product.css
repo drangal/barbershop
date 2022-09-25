@@ -1,0 +1,55 @@
+@import url("general.css");
+
+.wrapper_background {
+  background: url(../img/substrate.jpg) #f9f6f3;
+}
+
+.main__container {
+  display: flex;
+  max-width: 940px;
+  margin: 0px auto;
+  color: black;
+  flex-direction: column;
+  margin-top: 51px;
+  margin-bottom: 49px;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 460px;
+}
+
+.carousel__item {
+  filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.2));
+}
+
+.description {
+  padding-left: 89px;
+}
+
+.description__article {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 29px;
+}
+
+.existence:last-child {
+  color: #aeaeae;
+}
+
+.description__text {
+  margin-bottom: 37px;
+}
+
+.description__purchase {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 62px;
+}
+
+.kit {
+  list-style-image: url("/icon/rhomb.svg");
+  list-style-position: inside;
+}

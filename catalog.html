@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="rus">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/index.css" />
-    <title>Barbershop Главная</title>
+    <link rel="stylesheet" href="./css/catalog.css" />
+    <title>Barbershop Магазин</title>
   </head>
   <body>
     <div class="wrapper wrapper_background">
       <header class="header-wrapper">
         <nav class="navbar">
           <ul class="navbar__list">
+            <li class="navbar__item">
+              <a class="links links__navbar" href="index.html"
+                ><img
+                  class="logo-header"
+                  src="icon/logo_header.svg"
+                  alt="ГЛАВНАЯ"
+                />
+              </a>
+            </li>
             <li class="navbar__item">
               <a class="links links__navbar" href="#">ИНФОРМАЦИЯ</a>
             </li>
@@ -28,7 +35,9 @@
               <a class="links links__navbar" href="/price.html">ПРАЙС-ЛИСТ</a>
             </li>
             <li class="navbar__item">
-              <a class="links links__navbar" href="catalog.html">МАГАЗИН</a>
+              <a class="links links__navbar links_current" href="catalog.html"
+                >МАГАЗИН</a
+              >
             </li>
             <li class="navbar__item">
               <a class="links links__navbar" href="#">КОНТАКТЫ</a>
@@ -65,122 +74,163 @@
           </ul>
         </nav>
       </header>
+
       <main class="main">
         <div class="main__container">
-          <div class="logo-index">
-            <img src="icon/logo_index.svg" alt="Barbershop BORODINSKI" />
+          <div class="main__topic">
+            <b class="name">СРЕДСТВА ДЛЯ УХОДА</b>
+            <ul class="bread-crumbs">
+              <li class="bread-crumbs__item">ГЛАВНАЯ</li>
+              <li class="bread-crumbs__item">МАГАЗИН</li>
+              <li class="bread-crumbs__item">СРЕДСТВА ДЛЯ УХОДА</li>
+            </ul>
           </div>
-          <div class="selling-points">
-            <div class="selling-points__item">
-              <b class="name">БЫСТРО</b>
-              <div class="square"></div>
-              <p>
-                МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА <br />
-                ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ <br />
-                ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!
-              </p>
-            </div>
-            <div class="selling-points__item">
-              <b class="name">КРУТО</b>
-              <div class="square"></div>
-              <p>
-                ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. <br />
-                МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! <br />
-                ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
-              </p>
-            </div>
-            <div class="selling-points__item">
-              <b class="name">ДОРОГО</b>
-              <div class="square"></div>
-              <p>
-                НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И <br />
-                НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА <br />
-                НЕ ДАЕТ ОПРЕДЕЛЕННЫЙ СТАТУС?
-              </p>
-            </div>
-          </div>
-          <div class="info">
-            <div class="info__news">
-              <div class="name">НОВОСТИ</div>
-              <div>
-                <p>
-                  НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ <br />
-                  ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
+          <div class="main__catalog">
+            <aside class="side-panel">
+              <div class="side-panel__item">
+                <b class="name_middle">ПРОИЗВОДИТЕЛИ</b>
+                <label class="container"
+                  >Baxter of California
+                  <input type="checkbox" checked="checked" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container"
+                  >Mr Natty
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container"
+                  >Suavecito
+                  <input type="checkbox" checked="checked" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container"
+                  >Malin+Goetz
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container"
+                  >Murray’s
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container"
+                  >American Crew
+                  <input type="checkbox" checked="checked" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+
+              <div class="side-panel__item">
+                <b class="name_middle">ГРУППЫ ТОВАРОВ:</b>
+                <label class="container"
+                  >Бритвенные принадлежности
+                  <input type="radio" checked="checked" name="radio" />
+                  <span class="radiobtn"></span>
+                </label>
+                <label class="container"
+                  >Средства для ухода
+                  <input type="radio" name="radio" />
+                  <span class="radiobtn"></span>
+                </label>
+                <label class="container"
+                  >Аксессуары
+                  <input type="radio" name="radio" />
+                  <span class="radiobtn"></span>
+                </label>
+              </div>
+              <a href="#" class="button button_show">ПОКАЗАТЬ</a>
+            </aside>
+            <div class="main__items">
+              <div class="item">
+                <img class="item__image" src="/img/travel_kit.jpg" />
+                <p class="product-name">
+                  Набор для путешествий <br />
+                  «Baxter of California»
                 </p>
-                <time datetime="2017-31-11">11 января</time>
+                <div class="purchase">
+                  <div class="price">2 900 ₽</div>
+                  <div>
+                    <a href="/product.html" class="button button_buy">КУПИТЬ</a>
+                  </div>
+                </div>
               </div>
-              <div>
-                <p>
-                  В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, <br />
-                  ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ <br />
-                  СТРОЙНЫЕ РЯДЫ
+              <div class="item">
+                <img class="item__image" src="/img/conditioner.jpg" />
+                <p class="product-name">
+                  Увлажняющий кондиционер <br />
+                  «Baxter of California»
                 </p>
-                <time datetime="2017-31-18">18 января</time>
+                <div class="purchase">
+                  <div class="price">750 ₽</div>
+                  <div>
+                    <a href="#" class="button button_buy">КУПИТЬ</a>
+                  </div>
+                </div>
               </div>
-              <a href="#" class="button button_standart">ВСЕ НОВОСТИ</a>
-            </div>
-            <div class="info__gallery">
-              <div class="name">ФОТОГАЛЕРЕЯ</div>
-              <img src="img/photo.jpg" alt="Фото барбершопа" />
-              <div class="double-button">
-                <a href="#" class="button button_standart">НАЗАД</a>
-                <a href="#" class="button button_standart">ВПЕРЕД</a>
+              <div class="item">
+                <img class="item__image" src="/img/hair_gel_suavecito.jpg" />
+                <p class="product-name">
+                  Гель для волос <br />
+                  «SUAVECITO»
+                </p>
+                <div class="purchase">
+                  <div class="price">290 ₽</div>
+                  <div>
+                    <a href="#" class="button button_buy">КУПИТЬ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img class="item__image" src="/img/hair_clay.jpg" />
+                <p class="product-name">
+                  Глина для укладки волос <br />
+                  «American crew»
+                </p>
+                <div class="purchase">
+                  <div class="price">500 ₽</div>
+                  <div>
+                    <a href="#" class="button button_buy">КУПИТЬ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img class="item__image" src="/img/hair_gel_american.jpg" />
+                <p class="product-name">
+                  Гель для волос <br />
+                  «AMERICAN CREW»
+                </p>
+                <div class="purchase">
+                  <div class="price">300 ₽</div>
+                  <div>
+                    <a href="#" class="button button_buy">КУПИТЬ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img class="item__image" src="/img/shaving_kit.jpg" />
+                <p class="product-name">
+                  Набор для бритья <br />
+                  «Baxter of California»
+                </p>
+                <div class="purchase">
+                  <div class="price">3 900 ₽</div>
+                  <div>
+                    <a href="#" class="button button_buy">КУПИТЬ</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="info">
-            <div class="info__contacts">
-              <div class="name">КОНТАКТНАЯ ИНФОРМАЦИЯ</div>
-              <p>
-                БАРБЕРШОП «БОРОДИНСКИЙ» <br />
-                АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8 <br />
-                ТЕЛЕФОН: +7 (812) 666-02-66
-              </p>
-              <p>
-                ВРЕМЯ РАБОТЫ: <br />
-                ПН—ПТ: С 10:00 ДО 22:00 <br />
-                СБ—ВС: С 10:00 ДО 19:00
-              </p>
-              <div class="double-button">
-                <a href="#" class="button button_standart">КАК ПРОЕХАТЬ</a>
-                <a href="#" class="button button_standart">ОБРАТНАЯ СВЯЗЬ</a>
-              </div>
-            </div>
-            <div class="info__registration">
-              <div class="name">ЗАПИСАТЬСЯ</div>
-              <p>
-                УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ <br />
-                С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
-              </p>
-              <div>
-                <form class="info__forms" action="#" method="post">
-                  <div>
-                    <label for="date">&emsp;ДАТА</label> <br />
-                    <input type="date" name="date" placeholder="08.10.2017" />
-                  </div>
-                  <div>
-                    <label for="time">&emsp;ВРЕМЯ</label> <br />
-                    <input type="time" name="time" placeholder="10:00" />
-                  </div>
-                  <div>
-                    <label for="first_name">&emsp;ВАШЕ ИМЯ</label> <br />
-                    <input type="text" name="first_name" placeholder="Борода" />
-                  </div>
-                  <div>
-                    <label for="phone">&emsp;ТЕЛЕФОН</label> <br />
-                    <input
-                      type="tel"
-                      name="phone"
-                      placeholder="+7 123 456-78-90"
-                    />
-                  </div>
-                </form>
-              </div>
-              <a href="#" class="button button_send">ОТПРАВИТЬ</a>
-            </div>
+          <div class="main__pages">
+            <a href="#" class="button button_icon">1</a>
+            <a href="#" class="button button_current">2</a>
+            <a href="#" class="button button_icon">3</a>
+            <a href="#" class="button button_icon">4</a>
           </div>
         </div>
       </main>
+
       <footer class="footer">
         <div class="footer__container">
           <div>

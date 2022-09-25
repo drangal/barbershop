@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="rus">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/index.css" />
-    <title>Barbershop Главная</title>
+    <link rel="stylesheet" href="./css/price.css" />
+    <title>Barbershop Магазин</title>
   </head>
   <body>
     <div class="wrapper wrapper_background">
@@ -19,13 +17,24 @@
         <nav class="navbar">
           <ul class="navbar__list">
             <li class="navbar__item">
+              <a class="links links__navbar" href="index.html"
+                ><img
+                  class="logo-header"
+                  src="icon/logo_header.svg"
+                  alt="ГЛАВНАЯ"
+                />
+              </a>
+            </li>
+            <li class="navbar__item">
               <a class="links links__navbar" href="#">ИНФОРМАЦИЯ</a>
             </li>
             <li class="navbar__item">
               <a class="links links__navbar" href="#">НОВОСТИ</a>
             </li>
             <li class="navbar__item">
-              <a class="links links__navbar" href="/price.html">ПРАЙС-ЛИСТ</a>
+              <a class="links links__navbar links_current" href="#"
+                >ПРАЙС-ЛИСТ</a
+              >
             </li>
             <li class="navbar__item">
               <a class="links links__navbar" href="catalog.html">МАГАЗИН</a>
@@ -65,122 +74,75 @@
           </ul>
         </nav>
       </header>
+
       <main class="main">
         <div class="main__container">
-          <div class="logo-index">
-            <img src="icon/logo_index.svg" alt="Barbershop BORODINSKI" />
+          <div class="main__topic">
+            <b class="name">ПРАЙС-ЛИСТ</b>
+            <ul class="bread-crumbs">
+              <li class="bread-crumbs__item">ГЛАВНАЯ</li>
+              <li class="bread-crumbs__item">ПРАЙС-ЛИСТ</li>
+            </ul>
           </div>
-          <div class="selling-points">
-            <div class="selling-points__item">
-              <b class="name">БЫСТРО</b>
-              <div class="square"></div>
-              <p>
-                МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА <br />
-                ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ <br />
-                ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!
-              </p>
+          <img
+            class="icon-slogan"
+            src="/icon/slogan.svg"
+            alt="Лозунг 'ИСТИННО МУЖСКАЯ КЛАССИКА'"
+          />
+          <div class="main__catalog main_price">
+            <div class="tools">
+              <b class="name_middle"
+                >МЫ ИСПОЛЬЗУЕМ ТОЛЬКО<br />
+                ЛУЧШИЕ СРЕДСТВА:</b
+              >
+              <ul class="care-products">
+                <li class="care-products__item">Baxter of California</li>
+                <li class="care-products__item">Mr Natty</li>
+                <li class="care-products__item">Suavecito</li>
+                <li class="care-products__item">Malin+Goetz</li>
+              </ul>
             </div>
-            <div class="selling-points__item">
-              <b class="name">КРУТО</b>
-              <div class="square"></div>
-              <p>
-                ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. <br />
-                МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! <br />
-                ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
-              </p>
+            <div class="services">
+              <b class="name_middle"
+                >ЦЕНЫ НА УСЛУГИ<br />
+                НАШИХ МАСТЕРОВ:</b
+              >
+              <table class="table" cellspacing="0">
+                <tr class="table__row">
+                  <td class="table__cell table__cell_name">СТРИЖКА</td>
+                  <td class="table__cell table__cell_price">1500 ₽</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell table__cell_name">СТРИЖКА БОРОДЫ</td>
+                  <td class="table__cell table__cell_price">500 ₽</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell table__cell_name">НАКРУТКА УСОВ</td>
+                  <td class="table__cell table__cell_price">350 ₽</td>
+                </tr>
+              </table>
             </div>
-            <div class="selling-points__item">
-              <b class="name">ДОРОГО</b>
-              <div class="square"></div>
-              <p>
-                НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И <br />
-                НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА <br />
-                НЕ ДАЕТ ОПРЕДЕЛЕННЫЙ СТАТУС?
-              </p>
-            </div>
-          </div>
-          <div class="info">
-            <div class="info__news">
-              <div class="name">НОВОСТИ</div>
-              <div>
+            <div class="summary">
+              <b class="name_middle">НЕСКОЛЬКО СЛОВ О НАС:</b>
+              <div class="summary__text">
                 <p>
-                  НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ <br />
-                  ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
+                  Наша парикмахерская занимается исключительно мужскими<br />
+                  стрижками. Стрижка каждого клиента для нас - это уникальная<br />
+                  и продуманная до мелочей работа. Мы не работаем на<br />
+                  количество, мы делаем качество.
                 </p>
-                <time datetime="2017-31-11">11 января</time>
-              </div>
-              <div>
                 <p>
-                  В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, <br />
-                  ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ <br />
-                  СТРОЙНЫЕ РЯДЫ
+                  Наша мастерская расположена в центре города, поэтому<br />
+                  сделать стильную стрижку можно в любое время, даже в<br />
+                  обеденный перерыв. Здесь вы можете погрузиться в удобную<br />
+                  для вас атмосферу, чувствовать себя комфортно и свободно!
                 </p>
-                <time datetime="2017-31-18">18 января</time>
               </div>
-              <a href="#" class="button button_standart">ВСЕ НОВОСТИ</a>
-            </div>
-            <div class="info__gallery">
-              <div class="name">ФОТОГАЛЕРЕЯ</div>
-              <img src="img/photo.jpg" alt="Фото барбершопа" />
-              <div class="double-button">
-                <a href="#" class="button button_standart">НАЗАД</a>
-                <a href="#" class="button button_standart">ВПЕРЕД</a>
-              </div>
-            </div>
-          </div>
-          <div class="info">
-            <div class="info__contacts">
-              <div class="name">КОНТАКТНАЯ ИНФОРМАЦИЯ</div>
-              <p>
-                БАРБЕРШОП «БОРОДИНСКИЙ» <br />
-                АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8 <br />
-                ТЕЛЕФОН: +7 (812) 666-02-66
-              </p>
-              <p>
-                ВРЕМЯ РАБОТЫ: <br />
-                ПН—ПТ: С 10:00 ДО 22:00 <br />
-                СБ—ВС: С 10:00 ДО 19:00
-              </p>
-              <div class="double-button">
-                <a href="#" class="button button_standart">КАК ПРОЕХАТЬ</a>
-                <a href="#" class="button button_standart">ОБРАТНАЯ СВЯЗЬ</a>
-              </div>
-            </div>
-            <div class="info__registration">
-              <div class="name">ЗАПИСАТЬСЯ</div>
-              <p>
-                УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ <br />
-                С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
-              </p>
-              <div>
-                <form class="info__forms" action="#" method="post">
-                  <div>
-                    <label for="date">&emsp;ДАТА</label> <br />
-                    <input type="date" name="date" placeholder="08.10.2017" />
-                  </div>
-                  <div>
-                    <label for="time">&emsp;ВРЕМЯ</label> <br />
-                    <input type="time" name="time" placeholder="10:00" />
-                  </div>
-                  <div>
-                    <label for="first_name">&emsp;ВАШЕ ИМЯ</label> <br />
-                    <input type="text" name="first_name" placeholder="Борода" />
-                  </div>
-                  <div>
-                    <label for="phone">&emsp;ТЕЛЕФОН</label> <br />
-                    <input
-                      type="tel"
-                      name="phone"
-                      placeholder="+7 123 456-78-90"
-                    />
-                  </div>
-                </form>
-              </div>
-              <a href="#" class="button button_send">ОТПРАВИТЬ</a>
             </div>
           </div>
         </div>
       </main>
+
       <footer class="footer">
         <div class="footer__container">
           <div>

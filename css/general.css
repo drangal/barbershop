@@ -1,0 +1,225 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  width: 100%;
+  min-height: 72px;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 20px;
+  flex-grow: 1;
+  max-width: 940px;
+  margin: 0px auto;
+}
+
+.navbar__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+}
+
+.main {
+  display: flex;
+  flex: 1 1 auto;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.bread-crumbs {
+  display: flex;
+  flex-direction: row;
+  list-style-image: url("/icon/rhomb.svg");
+  margin-top: 15px;
+}
+
+.bread-crumbs__item {
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.bread-crumbs .bread-crumbs__item:first-child {
+  padding-left: 0;
+  list-style-image: none;
+  list-style-type: none;
+}
+
+.bread-crumbs li:last-child {
+  padding-right: 0;
+  color: #aba9a7;
+}
+
+.main__catalog {
+  display: flex;
+  flex-direction: row;
+  margin-top: 49px;
+  margin-bottom: 63px;
+}
+
+.name {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.name_middle {
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 27px;
+}
+
+.login {
+  margin-right: 12px;
+}
+
+.links {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar__item {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar__item:hover {
+  background-color: #242424;
+}
+
+.links__navbar {
+  display: inline;
+}
+
+.logo-header {
+  display: block;
+  height: 20px;
+}
+
+.links_current {
+  padding-bottom: 22px;
+  border-bottom: 4px solid white;
+}
+
+.button {
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  color: white;
+  background-color: #663d15;
+}
+
+.button_standart {
+  min-width: 140px;
+  min-height: 43px;
+}
+
+.footer {
+  background: url(../img/footer.jpg), #1a1a1a;
+  line-height: 24px;
+  width: 100%;
+  min-height: 193px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 940px;
+  padding-top: 59px;
+  margin: 0px auto;
+}
+
+.links__footer {
+  text-decoration: underline;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.icon {
+  display: flex;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.button_icon {
+  width: 43px;
+  height: 43px;
+}
+
+.icon .button:hover {
+  stroke: black;
+  fill: black;
+  color: black;
+  background-color: white;
+}
+
+.button_current {
+  width: 43px;
+  height: 43px;
+  color: black;
+  background-color: white;
+}
+
+.purchase {
+  display: flex;
+  flex-direction: row;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.price {
+  flex-grow: 1;
+  color: black;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 109px;
+}
+
+.button_buy {
+  min-width: 78px;
+  min-height: 43px;
+}

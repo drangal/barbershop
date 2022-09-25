@@ -1,0 +1,62 @@
+@import url("general.css");
+
+.main__container {
+  display: flex;
+  max-width: 940px;
+  margin: 0px auto;
+  color: black;
+  flex-direction: column;
+  margin-top: 51px;
+  margin-bottom: 49px;
+}
+
+.main_price {
+  margin-top: 0px;
+  margin-bottom: 29px;
+  flex-wrap: wrap;
+}
+
+.icon-slogan {
+  margin-top: 39px;
+  margin-bottom: 63px;
+}
+
+.tools {
+  padding-right: 242px;
+}
+
+.care-products {
+  list-style-image: url("/icon/rhomb.svg");
+  list-style-position: inside;
+  line-height: 37px;
+}
+
+.table {
+  border: 1px solid black;
+}
+
+.table__cell {
+  border: 1px solid #000000;
+}
+
+.table__cell_name {
+  padding-left: 19px;
+  width: 230px;
+  height: 43px;
+}
+
+.table__cell_price {
+  text-align: center;
+  width: 230px;
+  height: 43px;
+}
+
+.summary {
+  margin-top: 60px;
+}
+
+.summary__text {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
